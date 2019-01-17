@@ -1,0 +1,47 @@
+:root {
+    --ucado-green: #2af598;
+    --ucado-orange: orange;
+    --light-blue: #08aeea;
+}
+
+#top {
+    height: 300px;
+    //background-image: url("/assets/img/items-home-insurance.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {
+
+}
+
+#ads {
+    border: 1px solid green;
+    background-color: antiquewhite;
+
+    & .App {
+        display: flex;
+        flex-wrap: wrap;
+        
+        & form {
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px dashed black;
+            width: 33.33%;
+            max-width: 300px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    #balls {
+        flex-direction: column;
+        align-items: center;
+        
+        & > div {
+            margin-bottom: 50px;
+        }
+    }
+}
