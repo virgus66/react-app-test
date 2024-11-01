@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes , Link } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import Test from "./test"
@@ -25,11 +25,11 @@ class App extends Component {
                 <Link to="/test/123098">/test/:id</Link>
               </div>
 
-              <Switch>
+              <Routes >
                 <Route path='/' exact render={ ()=> <div>welcome</div> } />
                 <Route path='/test' exact render={ ()=> <div>test</div> } />
                 <Route path='/test/:id' component={Test} />
-              </Switch>
+              </Routes >
             </div>
           </BrowserRouter>
         
